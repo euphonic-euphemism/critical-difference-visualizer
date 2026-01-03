@@ -50,19 +50,21 @@
       "electron/**/*"
     ],
     "directories": {
-      "buildResources": "public"
+      "buildResources": "build"
     },
     "win": {
       "target": ["nsis"],
-      "icon": "public/vite.svg"
+      "icon": "build/icon.ico"
     },
     "linux": {
       "target": ["deb", "AppImage"],
-      "category": "Science"
+      "category": "Science",
+      "icon": "build/icon.png"
     },
     "mac": {
       "target": ["dmg"],
-      "category": "public.app-category.developer-tools"
+      "category": "public.app-category.developer-tools",
+      "icon": "build/icon.icns"
     }
   }
 }
